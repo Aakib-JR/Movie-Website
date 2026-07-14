@@ -22,3 +22,9 @@
     background: white !important;
     cursor: pointer !important;
 }
+
+@media(max-width:576px){
+    .mainBtn{
+        font-size: 10px;
+    }
+}
