@@ -1,0 +1,114 @@
+{
+    "blogs": [
+        {
+            "_id": 1,
+            "thumbnail": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
+            "category": "Movie News",
+            "title": "Avatar 3 Release Date Officially Confirmed",
+            "date": "July 14, 2026",
+            "author": {
+                "name": "Movie Hub",
+                "image": "https://randomuser.me/api/portraits/men/11.jpg"
+            }
+        },
+        {
+            "_id": 2,
+            "thumbnail": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800",
+            "category": "Review",
+            "title": "Mission: Impossible – Final Reckoning Review",
+            "date": "July 12, 2026",
+            "author": {
+                "name": "Cinema World",
+                "image": "https://randomuser.me/api/portraits/women/22.jpg"
+            }
+        },
+        {
+            "_id": 3,
+            "thumbnail": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
+            "category": "Trailer",
+            "title": "The Batman 2 Official Trailer Breaks Records",
+            "date": "July 10, 2026",
+            "author": {
+                "name": "Film Insider",
+                "image": "https://randomuser.me/api/portraits/men/33.jpg"
+            }
+        },
+        {
+            "_id": 4,
+            "thumbnail": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800",
+            "category": "Upcoming",
+            "title": "Top 10 Most Anticipated Movies of 2026",
+            "date": "July 08, 2026",
+            "author": {
+                "name": "Movie Times",
+                "image": "https://randomuser.me/api/portraits/women/44.jpg"
+            }
+        },
+        {
+            "_id": 5,
+            "thumbnail": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800",
+            "category": "Movie News",
+            "title": "Marvel Announces New Avengers Movie Updates",
+            "date": "July 06, 2026",
+            "author": {
+                "name": "Marvel Insider",
+                "image": "https://randomuser.me/api/portraits/men/55.jpg"
+            }
+        },
+        {
+            "_id": 6,
+            "thumbnail": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800",
+            "category": "Review",
+            "title": "Superman Legacy Movie Review: A New Beginning",
+            "date": "July 05, 2026",
+            "author": {
+                "name": "Cinema Review",
+                "image": "https://randomuser.me/api/portraits/women/66.jpg"
+            }
+        },
+        {
+            "_id": 7,
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwK4r9S8HX0OtSoe2Ipsmhd8boh_G5RVDBP2t6kCWCsg&s=10",
+            "category": "Trailer",
+            "title": "Fantastic Four Official Trailer Released Worldwide",
+            "date": "July 03, 2026",
+            "author": {
+                "name": "Movie Zone",
+                "image": "https://randomuser.me/api/portraits/men/77.jpg"
+            }
+        },
+        {
+            "_id": 8,
+            "thumbnail": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800",
+            "category": "Behind The Scenes",
+            "title": "Inside The Making of Hollywood Blockbuster Movies",
+            "date": "July 01, 2026",
+            "author": {
+                "name": "Film Studio",
+                "image": "https://randomuser.me/api/portraits/women/88.jpg"
+            }
+        },
+        {
+            "_id": 9,
+            "thumbnail": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
+            "category": "Box Office",
+            "title": "Highest Grossing Movies Of 2026 So Far",
+            "date": "June 28, 2026",
+            "author": {
+                "name": "Box Office Daily",
+                "image": "https://randomuser.me/api/portraits/men/90.jpg"
+            }
+        },
+        {
+            "_id": 10,
+            "thumbnail": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=800",
+            "category": "Hollywood",
+            "title": "Hollywood Directors Who Changed Cinema Forever",
+            "date": "June 25, 2026",
+            "author": {
+                "name": "Cinema Expert",
+                "image": "https://randomuser.me/api/portraits/women/12.jpg"
+            }
+        }
+    ]
+}
