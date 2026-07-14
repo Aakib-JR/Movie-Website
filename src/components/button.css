@@ -23,8 +23,30 @@
     cursor: pointer !important;
 }
 
-@media(max-width:576px){
+@media(max-width:991px) {
     .mainBtn{
-        font-size: 10px;
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 5px;
+        height: 30px;
     }
 }
+@media(max-width:767px) {
+    .mainBtn{
+        font-size: 11px;
+        margin-right: 8px;
+        padding: 10px;
+        height: 28px;
+    }
+}
+
+@media(max-width:576px){
+    .mainBtn{
+        font-size: 7px;
+        margin-right: 1px;
+        padding: 5px;
+        height: 27px;
+    }
+}
+
+/* done */
