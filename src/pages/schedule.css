@@ -32,4 +32,8 @@
     left: 0;
 }
 
-
+@media(max-width:576px){
+    .schedule .filters li{
+        padding: 10px 14px;
+    }
+}
