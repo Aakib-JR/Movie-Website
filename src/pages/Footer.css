@@ -1,0 +1,148 @@
+.footer {
+    background: #0b0b0b;
+    color: #ffffff;
+    padding: 80px 0 25px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Logo */
+
+.footer-logo {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-logo span {
+    color: #ff1744;
+}
+
+/* Description */
+
+.footer-description {
+    color: #b5b5b5;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Headings */
+
+.footer h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background: #ff1744;
+}
+
+/* Links */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #bdbdbd;
+    transition: .3s;
+}
+
+.footer-links li a:hover {
+    color: #ff1744;
+    padding-left: 8px;
+}
+
+/* Contact */
+
+.footer-contact p {
+    color: #bdbdbd;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-contact i {
+    color: #ff1744;
+    font-size: 18px;
+}
+
+/* Social */
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    background: #ff1744;
+    transform: translateY(-6px);
+}
+
+/* Line */
+
+.footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    margin: 50px 0 25px;
+}
+
+/* Bottom */
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9b9b9b;
+    margin: 0;
+}
+
+.footer-bottom span {
+    color: #ff1744;
+    font-weight: 600;
+}
+
+
+
+
+
