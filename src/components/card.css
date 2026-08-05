@@ -126,3 +126,20 @@
     transform:scale(1.2);
 }
 
+/* Responsive */
+
+@media(max-width:992px){
+    .card-movie-card{
+        height:250px;
+    }
+}
+
+@media(max-width:576px){
+    .card-movie-card{
+        height:250px;
+    }
+    .card-movie-details{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
