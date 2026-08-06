@@ -37,3 +37,26 @@
 .movieSwiper .swiper-slide-active{
     transform:scale(1.1);
 }
+
+@media(max-width:991px) {
+    .movieSwiper {
+        left: 45%;
+        width: 90%;
+        bottom: -390px;
+    }
+}
+@media(max-width:767px) {
+    .movieSwiper {
+        left: 45%;
+        width: 90%;
+        bottom: -390px;
+    }
+}
+
+@media(max-width:576px){
+    .movieSwiper {
+        left: 45%;
+        width: 90%;
+        bottom: -370px;
+    }
+}
