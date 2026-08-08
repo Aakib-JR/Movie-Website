@@ -32,3 +32,21 @@
   color: #ffffff;
   border-right: 1px solid #ffffff;
 }
+
+@media(max-width:991px) {
+    .search{
+      display: none;
+    }
+}
+@media(max-width:767px) {
+    .search{
+      display: none;
+    }
+}
+
+@media(max-width:576px){
+    .search{
+      display: none;
+    }
+}
+
