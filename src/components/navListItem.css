@@ -11,9 +11,40 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
 }
 
-.nav li a:hover,
-.nav li a.active{
-    color: var(--primary);
+.nav li a::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg,rgb(238, 176, 176),rgb(241, 49, 49),red);
+    left: 0;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+.nav li a:hover::after{
+    width: 100%;
+}
+
+@media(max-width:991px) {
+    .nav li{
+       font-size: 15px;
+        margin: 0 10px;
+    }
+}
+@media(max-width:767px) {
+    .nav li{
+       font-size: 10px;
+        margin: 0 10px;
+    }
+}
+
+@media(max-width:576px){
+    .nav li{
+       font-size: 8px;
+        margin: 0 10px;
+    }
 }
