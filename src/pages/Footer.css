@@ -142,7 +142,44 @@
     font-weight: 600;
 }
 
+/* Responsive */
 
+@media(max-width:991px) {cd reac
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .footer {
+        padding: 60px 0 20px;
+    }
+
+    .footer-logo {
+        font-size: 2.2rem;
+    }
+
+    .footer h4 {
+        margin-top: 20px;
+    }
+
+}
 
 
 
