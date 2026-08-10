@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,28 +6,79 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding: 15px 70px;
     z-index: 10000;
+    /* background: rgba(0, 0, 0, 0.218); */
 }
 
-header.scrolled{
+header.scrolled {
     background: rgba(0, 0, 0, 0.6);
     border-bottom: 2px solid var(--primary);
-    border-image: linear-gradient(90deg,transparent,var(--primary),transparent)30;
+    border-image: linear-gradient(90deg, transparent, var(--primary), transparent)30;
     backdrop-filter: blur(20px);
     padding: 10px 100px;
 }
-.logo{
-    /* font-family: 'Rasing Sans One',cursive; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    color: rgb(255, 0, 0);
+
+header .logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 37px;
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.nav{
+header .logo span {
+    color: var(--primary);
+}
+
+.nav {
     display: flex;
+}
+
+@media(max-width:991px) {
+     header {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.25);
+        justify-content: space-around;
+    }
+
+    .logo {
+        font-size: 25px;
+        margin-left: 3px;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+}
+ 
+@media(max-width:767px) {
+    header {
+        padding: 1px;
+        background-color: rgba(0, 0, 0, 0.25);
+        justify-content: space-around;
+    }
+
+    .logo {
+        font-size: 23px;
+        margin-left: 3px;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
+}
+
+
+@media(max-width:576px) {
+    header {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.25);
+        justify-content: space-around;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-left: 3px;
+        letter-spacing: 1px;
+        display: inline-block;
+    }
 }
