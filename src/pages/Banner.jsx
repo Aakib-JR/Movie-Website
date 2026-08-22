@@ -4,6 +4,7 @@ import MovieContent from "../components/MovieContent";
 import MovieDate from "../components/MovieDate";
 import PlayBtn from "../components/PlayBtn";
 import MovieSwiper from "../components/MovieSwiper";
+import Loading from "./Loading";
 
 function Banner() {
 
@@ -19,9 +20,6 @@ function Banner() {
         return response.json();
       })
       .then((data) => {
-        // Find the active movie
-        // const activeMovie = data.find((item) => item.active === true);
-        // setMovie(activeMovie);
         setMovie(data);
         setLoading(false);
       })
@@ -33,7 +31,8 @@ function Banner() {
 
   if (loading) {
     return (
-      <h2>Loading...</h2>
+      // <h2>Loading...</h2>
+      <Loading/>
     )
   }
 
