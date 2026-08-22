@@ -80,7 +80,7 @@ function Schedule() {
                         movies.length > 0 &&
                         movies.map(movie => (
                             // Card Component
-                            <Card key={movie._id} movie={movie} />
+                            <cd key={movie._id} movie={movie} />
                         ))}
                 </div>
             </div>

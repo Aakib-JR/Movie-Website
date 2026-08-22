@@ -8,7 +8,7 @@ import Button from '../components/Button';
 function Header() {
     return(
         <header>
-            <a href="/" className="logo">NETFILM</a>
+            <a href="/" className="logo">NET<span>FILM</span></a>
 
             <ul className="nav">
                 {

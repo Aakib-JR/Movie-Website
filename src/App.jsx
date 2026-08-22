@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Import Swiper styles
 import "swiper/css";
 import Mains from './pages/Mains';
+import Footer from './pages/Footer';
 
 function App() {
 
@@ -15,10 +16,14 @@ function App() {
       <Header/>
       <Banner/>
       <Mains />
+      <Footer />
     </>
   )
 }
 
 export default App;
 
+// cd react-app
+// npm run dev
 // npx json-server public/data/movieData.json --port 3000
+// npx json-server public/data/blogData.json --port 5000 
