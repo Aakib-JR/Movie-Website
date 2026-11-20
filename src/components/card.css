@@ -1,6 +1,7 @@
 /* Movie card */
 .card-movie-card{
     position:relative;
+    display:block;
     width:100%;
     height:250px;
     overflow:hidden;
@@ -9,6 +10,8 @@
     border-radius:12px;
     box-shadow:0 0 15px rgba(255,255,255,.3);
     transition:.4s;
+    color:inherit;
+    text-decoration:none;
 
 }
 

@@ -1,9 +1,9 @@
 import './button.css'
 
-function Button({icon,name,color='#ffffff',bgColor='#ff3700'}) {
+function Button({icon,name,color='#ffffff',bgColor='#ff3700',href='#'}) {
 
     return (
-        <a href="#" className="mainBtn" style={{color:color, background:bgColor}}>
+        <a href={href} className="mainBtn" style={{color:color, background:bgColor}}>
            {icon} {name}
         </a>
     )

@@ -6,7 +6,7 @@ function Card({ movie }) {
     return (
 
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
-            <div className="card-movie-card">
+            <a href={`/movie/${movie._id}`} className="card-movie-card" aria-label={`View details for ${movie.title}`}>
                 
                 <img
                     src={movie.previewImg}
@@ -28,12 +28,11 @@ function Card({ movie }) {
                     </div>
 
                     <div className="card-icons">
-                        <ion-icon name="add-outline" title="Buy Tickets"></ion-icon>
+                        <ion-icon name="add-outline" title="Info"></ion-icon>
                         <ion-icon name="play-outline" title="Trailer"></ion-icon>
                     </div>
-
                 </div>
-            </div>
+            </a>
         </div>
     );
 }

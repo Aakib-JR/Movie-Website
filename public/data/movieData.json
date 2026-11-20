@@ -14,7 +14,8 @@
       "category": "Mystery / Fantasy",
       "type": "Trending",
       "description": "Wednesday Addams returns to Nevermore Academy for another dark adventure filled with mysterious secrets, supernatural threats, and unexpected challenges. As she investigates new mysteries, Wednesday explores her psychic visions, strange friendships, and dangerous enemies while uncovering hidden truths.",
-      "active": true
+      "active": true,
+      "id": "GkmZA-QzjSs"
     },
     {
       "_id": 2,
@@ -30,7 +31,8 @@
       "category": "Sci-Fi",
       "type": "Latest",
       "description": "The final battle begins as Eleven and her friends unite against Vecna. Hawkins faces its greatest danger ever while friendships, sacrifice, courage, and hope determine the fate of their town and the entire world forever.",
-      "active": false
+      "active": false,
+      "id": "K0qgbTRIMu8"
     },
     {
       "_id": 3,
@@ -46,7 +48,8 @@
       "category": "Superhero",
       "type": "Trending",
       "description": "Peter Parker embraces a completely new beginning after the multiverse events. He faces powerful enemies, protects New York alone, discovers unexpected allies, and learns that every heroic choice carries responsibility and lasting consequences.",
-      "active": false
+      "active": false,
+      "id": "x5mnsbCd6v8"
     },
     {
       "_id": 4,
@@ -62,7 +65,8 @@
       "category": "Sci-Fi",
       "type": "Latest",
       "description": "Jake Sully leads his family through dangerous new regions of Pandora where powerful tribes emerge. Ancient conflicts, breathtaking landscapes, emotional sacrifices, and survival shape the next unforgettable chapter of the Avatar saga.",
-      "active": false
+      "active": false,
+      "id": "qj452tsLnjw"
     },
     {
       "_id": 5,
@@ -78,7 +82,8 @@
       "category": "Action",
       "type": "Popular",
       "description": "Batman returns to Gotham City where a mysterious new criminal threatens the city's future. Dark investigations, emotional struggles, dangerous alliances, and intense action challenge Bruce Wayne like never before throughout his journey.",
-      "active": false
+      "active": false,
+      "id": "PPf1vlbxFRo"
     },
     {
       "_id": 6,
@@ -94,7 +99,8 @@
       "category": "Fantasy",
       "type": "Trending",
       "description": "Harry Potter returns to the Wizarding World as a new magical threat rises. Alongside familiar faces and powerful new allies, he uncovers ancient secrets, faces dangerous enemies, and fights to protect Hogwarts and the future of the magical world.",
-      "active": false
+      "active": false,
+      "id": "b77Z_NFR7A4"
     },
     {
       "_id": 7,
@@ -110,7 +116,8 @@
       "category": "Sci-Fi",
       "type": "Latest",
       "description": "Paul Atreides struggles with the enormous responsibilities of ruling the galaxy while powerful political conspiracies, betrayal, destiny, and personal sacrifice reshape the future of Arrakis and everyone connected to his empire.",
-      "active": false
+      "active": false,
+      "id": "Ho4NTxhPH5o"
     },
     {
       "_id": 8,
@@ -126,7 +133,8 @@
       "category": "Adventure",
       "type": "Classic",
       "description": "Captain Jack Sparrow begins an unforgettable adventure across dangerous seas filled with pirates, treasure, and supernatural mysteries. With clever tricks and unexpected friendships, he battles enemies while searching for freedom and legendary riches.",
-      "active": false
+      "active": false,
+      "id": "_wAWp9OiyeI"
     },
     {
       "_id": 9,
@@ -142,7 +150,8 @@
       "category": "Adventure",
       "type": "Trending",
       "description": "A new expedition enters a dangerous world filled with genetically evolved dinosaurs. As survival becomes impossible, a team of explorers must uncover hidden secrets and escape from the most terrifying creatures on Earth.",
-      "active": false
+      "active": false,
+      "id": "3xZrxsPmTYU"
     },
     {
       "_id": 10,
@@ -158,7 +167,8 @@
       "category": "Crime Drama",
       "type": "Upcoming",
       "description": "Tommy Shelby returns in a dark and intense crime drama set during a dangerous new era. Facing enemies, political conflicts, and personal demons, Tommy must protect his legacy while navigating power, loyalty, and betrayal.",
-      "active": false
+      "active": false,
+      "id": "skCk_bfNi4w"
     }
   ],
   "scheduleMovies": [
@@ -174,11 +184,12 @@
       "category": "Action",
       "type": "Movie",
       "description": "Batman faces the Joker.",
-      "active": false
+      "active": false,
+      "id": "xAGm0K0LYYE"
     },
     {
       "_id": 102,
-      "previewImg": "https://www.jesuithighschool.org/sites/main/files/imagecache/lightbox/main-images/spiderman.jpg",
+      "previewImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLaF8PvOHncZau_WfsxIutH9LEu1b3q_wzciY1a6M0Od7IOBQRumhJU1iQTC7jNJDgKnmUg&s=10",
       "video": "https://www.youtube.com/results?search_query=Spider-Man+No+Way+Home+Official+Trailer",
       "title": "Spider-Man: No Way Home",
       "year": "2021",
@@ -188,7 +199,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "Spider-Man faces villains from different universes after a spell goes wrong.",
-      "active": false
+      "active": false,
+      "id": "VXwqV3kObuo"
     },
     {
       "_id": 103,
@@ -202,7 +214,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "John Wick faces the High Table.",
-      "active": false
+      "active": false,
+      "id": "e5Q-y__6nYA"
     },
     {
       "_id": 104,
@@ -216,7 +229,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "The Avengers fight Thanos.",
-      "active": false
+      "active": false,
+      "id": "8zak7KTgpfo"
     },
     {
       "_id": 105,
@@ -230,7 +244,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "Maverick trains elite pilots.",
-      "active": false
+      "active": false,
+      "id": "nlIqSwq-E44"
     },
     {
       "_id": 106,
@@ -244,7 +259,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "A high-speed desert chase.",
-      "active": false
+      "active": false,
+      "id": "qc9G-qKMreY"
     },
     {
       "_id": 107,
@@ -258,7 +274,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "The king of Wakanda protects his nation.",
-      "active": false
+      "active": false,
+      "id": "PnzlxugPWmo"
     },
     {
       "_id": 108,
@@ -272,7 +289,8 @@
       "category": "Action",
       "type": "Movie",
       "description": "Ethan Hunt faces a dangerous AI.",
-      "active": false
+      "active": false,
+      "id": "nWJRlwvZMoQ"
     },
     {
       "_id": 109,
@@ -286,7 +304,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "A team of astronauts travels through a wormhole to find humanity a new home.",
-      "active": false
+      "active": false,
+      "id": "ib-QHQAh1ig"
     },
     {
       "_id": 110,
@@ -300,7 +319,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "Two astronauts struggle for survival after a disaster damages their spacecraft.",
-      "active": false
+      "active": false,
+      "id": "rclQ9oVlS_I"
     },
     {
       "_id": 111,
@@ -314,7 +334,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "A linguist works with scientists to communicate with mysterious alien visitors.",
-      "active": false
+      "active": false,
+      "id": "-RIQe_sfyq8"
     },
     {
       "_id": 112,
@@ -328,7 +349,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "Giant robots battle massive monsters threatening humanity.",
-      "active": false
+      "active": false,
+      "id": "aP0S7VtNBDA"
     },
     {
       "_id": 113,
@@ -342,7 +364,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "Scientists discover a clue to the origins of humanity on a distant planet.",
-      "active": false
+      "active": false,
+      "id": "LDMjLs0HySs"
     },
     {
       "_id": 114,
@@ -356,7 +379,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "A hacker discovers that reality is a simulation controlled by machines.",
-      "active": false
+      "active": false,
+      "id": "9yYEez5xVyo"
     },
     {
       "_id": 115,
@@ -370,7 +394,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "A skilled thief enters people's dreams to steal and plant ideas.",
-      "active": false
+      "active": false,
+      "id": "qRoe-VnEQm0"
     },
     {
       "_id": 116,
@@ -384,7 +409,8 @@
       "category": "Sci-Fi",
       "type": "Movie",
       "description": "A young Blade Runner uncovers a secret that could change the future.",
-      "active": false
+      "active": false,
+      "id": "f-GEIKHfmHY"
     },
     {
       "_id": 117,
@@ -398,7 +424,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "A bank teller discovers he's actually a character inside a video game.",
-      "active": false
+      "active": false,
+      "id": "-bHvCdbLPSc"
     },
     {
       "_id": 118,
@@ -412,7 +439,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "A shy banker transforms into a wild green-faced superhero after wearing a magical mask.",
-      "active": false
+      "active": false,
+      "id": "ixClZGpdvgk"
     },
     {
       "_id": 119,
@@ -426,7 +454,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "A former high school geek turned CIA agent recruits an old classmate for a dangerous mission.",
-      "active": false
+      "active": false,
+      "id": "KhKZnitQZmI"
     },
     {
       "_id": 120,
@@ -440,7 +469,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "Four teenagers are transported into a magical video game world.",
-      "active": false
+      "active": false,
+      "id": "csZa17WqcF0"
     },
     {
       "_id": 121,
@@ -454,7 +484,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "Mr. Bean goes on a chaotic vacation across France.",
-      "active": false
+      "active": false,
+      "id": "H9jRFqnegjA"
     },
     {
       "_id": 122,
@@ -468,7 +499,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "An eight-year-old boy defends his home from two burglars after being left behind.",
-      "active": false
+      "active": false,
+      "id": "Ejj7Ph2Jbjs"
     },
     {
       "_id": 123,
@@ -482,7 +514,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "Old friends reunite for a weekend full of fun and hilarious memories.",
-      "active": false
+      "active": false,
+      "id": "oTe9ItbgXGM"
     },
     {
       "_id": 124,
@@ -496,7 +529,8 @@
       "category": "Comedy",
       "type": "Movie",
       "description": "A frustrated reporter is given God's powers for one week.",
-      "active": false
+      "active": false,
+      "id": "ehF7uYdvSW8"
     },
     {
       "_id": 125,
@@ -510,7 +544,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "Paranormal investigators help a family haunted by a dark supernatural presence.",
-      "active": false
+      "active": false,
+      "id": "-imoKi2jx38"
     },
     {
       "_id": 126,
@@ -524,7 +559,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A possessed doll brings terror to a young couple's home.",
-      "active": false
+      "active": false,
+      "id": "NUZEpECeE48"
     },
     {
       "_id": 127,
@@ -538,7 +574,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A group of children face a terrifying shape-shifting creature.",
-      "active": false
+      "active": false,
+      "id": "jQqqqsHvCvc"
     },
     {
       "_id": 128,
@@ -552,7 +589,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A priest and a novice investigate a mysterious demonic force.",
-      "active": false
+      "active": false,
+      "id": "nfZmovfe6Kw"
     },
     {
       "_id": 129,
@@ -566,7 +604,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A family discovers their son is trapped in a dangerous supernatural realm.",
-      "active": false
+      "active": false,
+      "id": "2uAd9x2tAsY"
     },
     {
       "_id": 130,
@@ -580,7 +619,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A doctor experiences terrifying supernatural events after witnessing a strange incident.",
-      "active": false
+      "active": false,
+      "id": "7DC3L1VGadY"
     },
     {
       "_id": 131,
@@ -594,7 +634,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A family must live in silence to survive mysterious creatures that hunt by sound.",
-      "active": false
+      "active": false,
+      "id": "r-ZZkpyDP8o"
     },
     {
       "_id": 132,
@@ -608,7 +649,8 @@
       "category": "Horror",
       "type": "Movie",
       "description": "A writer finds mysterious videos that reveal a horrifying supernatural mystery.",
-      "active": false
+      "active": false,
+      "id": "jis5kE3VqaQ"
     },
     {
       "_id": 133,
@@ -622,7 +664,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "Four teenagers discover a magical video game that transports them into a dangerous jungle adventure.",
-      "active": false
+      "active": false,
+      "id": "NSnAGtSACNE"
     },
     {
       "_id": 134,
@@ -636,7 +679,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "Scientists create a dinosaur park where prehistoric creatures come back to life.",
-      "active": false
+      "active": false,
+      "id": "Fuchd63VdqE"
     },
     {
       "_id": 135,
@@ -650,7 +694,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "Captain Jack Sparrow joins a mission involving pirates, treasure, and a cursed ship.",
-      "active": false
+      "active": false,
+      "id": "NZ_1CMMi2So"
     },
     {
       "_id": 136,
@@ -664,7 +709,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "A riverboat captain takes a scientist and her brother on a dangerous jungle expedition to find a legendary tree.",
-      "active": false
+      "active": false,
+      "id": "eGiR2kNFQZA"
     },
     {
       "_id": 137,
@@ -678,7 +724,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "A treasure hunter searches for a lost fortune while facing dangerous enemies.",
-      "active": false
+      "active": false,
+      "id": "VI8O7aax2lc"
     },
     {
       "_id": 138,
@@ -692,7 +739,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "A young hobbit begins a dangerous journey to destroy a powerful ring.",
-      "active": false
+      "active": false,
+      "id": "Rdus8_yk-Hw"
     },
     {
       "_id": 139,
@@ -706,7 +754,8 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "A young boy raised by wolves journeys through the jungle with his animal friends.",
-      "active": false
+      "active": false,
+      "id": "1zcOH-En77g"
     },
     {
       "_id": 140,
@@ -719,7 +768,44 @@
       "category": "Adventure",
       "type": "Movie",
       "description": "Explorers discover a mysterious island ruled by the giant ape Kong.",
-      "active": false
+      "active": false,
+      "id": "MZdHmVaAVUM"
     }
-  ]
+  ],
+  "bookings": [
+    {
+      "fullName": "Aakib Cr7",
+      "movieName": "Free Guy",
+      "email": "aakibcr83@gmail.com",
+      "phone": "0778767555",
+      "date": "2026-11-19",
+      "guests": "1",
+      "serviceType": "Standard",
+      "createdAt": "2026-11-19T15:25:33.318Z",
+      "id": "8EGHAc4QU5c"
+    },
+    {
+      "fullName": "Aakib Cr7",
+      "movieName": "The Dark Knight",
+      "email": "aakibcr83@gmail.com",
+      "phone": "0778767555",
+      "date": "2026-11-19",
+      "guests": "1",
+      "serviceType": "Standard",
+      "createdAt": "2026-11-19T15:33:20.514Z",
+      "id": "uJwZw8P93dU"
+    },
+    {
+      "fullName": "Aakib Cr7",
+      "movieName": "The Matrix",
+      "email": "aakibcr83@gmail.com",
+      "phone": "0778767555",
+      "date": "2026-11-19",
+      "guests": "1",
+      "serviceType": "Premium",
+      "createdAt": "2026-11-19T15:51:49.796Z",
+      "id": "9t8_bxsiDwY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

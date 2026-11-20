@@ -1,4 +1,3 @@
-import React from 'react';
 import NavListItem from "../components/NavListItem";
 import navListData from "../data/navListData";
 import './header.css'
@@ -18,7 +17,7 @@ function Header() {
                 }
             </ul>
             <Search/>
-            <Button icon={<ion-icon name="log-in-outline"></ion-icon>} name='Sign in' />
+            <Button icon={<ion-icon name="log-in-outline"></ion-icon>} name='Sign in' href='/signin' />
         </header>
     );
     

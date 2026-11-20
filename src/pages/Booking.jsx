@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './booking.css';
+import { API_BASE } from '../data/api';
 
 function Booking() {
     const [formData, setFormData] = useState({
         fullName: '',
-        movieName:'',
+        movieName: new URLSearchParams(window.location.search).get('movie') || '',
         email: '',
         phone: '',
         date: '',
         guests: '1',
         serviceType: 'Standard'
     });
+    const [submission, setSubmission] = useState({ status: 'idle', message: '' });
+
+    useEffect(() => {
+        if (window.location.hash !== '#booking') {
+            return undefined;
+        }
+
+        const frameId = window.requestAnimationFrame(() => {
+            document.getElementById('booking')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+
+        return () => window.cancelAnimationFrame(frameId);
+    }, []);
 
     const handleChange = (e) => {
         setFormData({
@@ -19,10 +36,41 @@ function Booking() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(`Booking submitted successfully!\n\nID: ${'001'}\nName: ${formData.fullName}\nMovie Name: ${formData.movieName}\nDate: ${formData.date}`);
-        console.log('Booking Data:', formData);
+        setSubmission({ status: 'submitting', message: '' });
+
+        try {
+            const response = await fetch(`${API_BASE}/bookings`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...formData, createdAt: new Date().toISOString() })
+            });
+
+            if (!response.ok) {
+                throw new Error('Booking could not be saved. Please try again.');
+            }
+
+            const booking = await response.json();
+            setSubmission({
+                status: 'success',
+                message: `Booking confirmed. Reference: ${booking.id ?? booking._id}`
+            });
+            setFormData({
+                fullName: '',
+                movieName: '',
+                email: '',
+                phone: '',
+                date: '',
+                guests: '1',
+                serviceType: 'Standard'
+            });
+        } catch (error) {
+            setSubmission({
+                status: 'error',
+                message: error instanceof Error ? error.message : 'Booking could not be saved.'
+            });
+        }
     };
 
     return (
@@ -159,10 +207,15 @@ function Booking() {
                                 {/* Submit Button */}
 
                                 <div className="d-grid mt-5">
-                                    <button type="submit" className="btn btn-booking py-3 fw-bold">
-                                        Book Now
+                                    <button type="submit" className="btn btn-booking py-3 fw-bold" disabled={submission.status === 'submitting'}>
+                                        {submission.status === 'submitting' ? 'Saving...' : 'Book Now'}
                                     </button>
                                 </div>
+                                {submission.message && (
+                                    <p className={`booking-message ${submission.status}`} role="status" aria-live="polite">
+                                        {submission.message}
+                                    </p>
+                                )}
                             </form>
                         </div>
                     </div>

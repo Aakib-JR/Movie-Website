@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
+import { useState, useEffect } from 'react';
 import './schedule.css';
 import Card from '../components/Card';
 
@@ -13,9 +13,8 @@ function Schedule() {
         { _id: 6, name: 'Adventure', active: false }
     ];
 
-    const [data, setData] = useState([]); //Original Data
-    const [movies, setMovies] = useState([]); //copy Data
-    const [filters, setFilters] = useState(filterList);
+    const [movies, setMovies] = useState([]);
+    const [activeCategory, setActiveCategory] = useState('All');
 
     useEffect(() => {
         fetch("http://localhost:3000/scheduleMovies")
@@ -26,36 +25,20 @@ function Schedule() {
                 return response.json();
             })
             .then((data) => {
-                setData(data);
+                setMovies(data);
             })
             .catch((error) => {
                 console.error("Error:", error);
             });
     }, []);
 
-    useEffect(() => {
-        setMovies(data);
-    },[data]);
-
     const handleFilterMovies = category=>{
-
-        const ActiveFilterMovies = filters.map(filter=>{
-            filter.active = false;
-            if(filter.name===category){
-                filter.active = true;
-            }
-            return filter;
-        });
-
-        setFilters(ActiveFilterMovies);
-
-        if(category==='All'){
-            setMovies(data);
-            return;
-        }
-        const filteredMovies = data.filter(movie=> movie.category === category);
-        setMovies(filteredMovies);
+        setActiveCategory(category);
     }
+
+    const visibleMovies = activeCategory === 'All'
+        ? movies
+        : movies.filter(movie => movie.category === activeCategory);
 
     return (
         <section id="schedule" className='schedule'>
@@ -68,19 +51,18 @@ function Schedule() {
                 <div className="row">
                     {
                         <ul className="filters">
-                            {filters.map(filter => (
-                                <li key={filter._id} className={`${filter.active ? 'active' : undefined}`} onClick={()=>handleFilterMovies(filter.name)}>{filter.name}</li>
+                            {filterList.map(filter => (
+                                <li key={filter._id} className={`${activeCategory === filter.name ? 'active' : undefined}`} onClick={()=>handleFilterMovies(filter.name)}>{filter.name}</li>
                             ))
                             }
                         </ul>
                     }
                 </div>
                 <div className="row mt-5">
-                    {movies &&
-                        movies.length > 0 &&
-                        movies.map(movie => (
-                            // Card Component
-                            <cd key={movie._id} movie={movie} />
+                    {visibleMovies &&
+                        visibleMovies.length > 0 &&
+                        visibleMovies.map(movie => (
+                            <Card key={movie._id} movie={movie} />
                         ))}
                 </div>
             </div>
