@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { API_BASE } from '../data/api';
+import { MOVIE_DATA_URL } from '../data/api';
 import './movieDetails.css';
 
 function MovieDetails({ movieId }) {
@@ -9,20 +9,14 @@ function MovieDetails({ movieId }) {
     useEffect(() => {
         let isCurrent = true;
 
-        Promise.all([
-            fetch(`${API_BASE}/movieData`),
-            fetch(`${API_BASE}/scheduleMovies`)
-        ])
-            .then(async ([featuredResponse, scheduleResponse]) => {
-                if (!featuredResponse.ok || !scheduleResponse.ok) {
+        fetch(MOVIE_DATA_URL)
+            .then(async (response) => {
+                if (!response.ok) {
                     throw new Error('Unable to load movie details.');
                 }
 
-                const [featuredMovies, scheduleMovies] = await Promise.all([
-                    featuredResponse.json(),
-                    scheduleResponse.json()
-                ]);
-                const allMovies = [...featuredMovies, ...scheduleMovies];
+                const { movieData, scheduleMovies } = await response.json();
+                const allMovies = [...movieData, ...scheduleMovies];
                 const selectedMovie = allMovies.find(
                     (item) => String(item._id ?? item.id) === movieId
                 );

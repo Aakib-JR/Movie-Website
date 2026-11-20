@@ -23,7 +23,6 @@ const navListData = [
         name: 'booking',
         active: false,
     },
-    ,
 ];
 
 export default navListData;

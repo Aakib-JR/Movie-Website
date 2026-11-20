@@ -12,7 +12,7 @@ function Header() {
             <ul className="nav">
                 {
                     navListData.map(nav=>(
-                        <NavListItem key={nav.id} nav={nav}/>
+                        <NavListItem key={nav._id} nav={nav}/>
                     ))
                 }
             </ul>

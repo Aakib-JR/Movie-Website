@@ -41,6 +41,10 @@ function Booking() {
         setSubmission({ status: 'submitting', message: '' });
 
         try {
+            if (!API_BASE) {
+                throw new Error('Booking service is not configured. Set VITE_API_BASE_URL to your backend URL.');
+            }
+
             const response = await fetch(`${API_BASE}/bookings`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

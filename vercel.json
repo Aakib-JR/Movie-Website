@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/movie/:movieId", "destination": "/" },
+    { "source": "/signin", "destination": "/" },
+    { "source": "/booking", "destination": "/" }
+  ]
+}

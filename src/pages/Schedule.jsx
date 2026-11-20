@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './schedule.css';
 import Card from '../components/Card';
+import { MOVIE_DATA_URL } from '../data/api';
 
 function Schedule() {
 
@@ -17,7 +18,7 @@ function Schedule() {
     const [activeCategory, setActiveCategory] = useState('All');
 
     useEffect(() => {
-        fetch("http://localhost:3000/scheduleMovies")
+        fetch(MOVIE_DATA_URL)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch data");
@@ -25,7 +26,7 @@ function Schedule() {
                 return response.json();
             })
             .then((data) => {
-                setMovies(data);
+                setMovies(data.scheduleMovies);
             })
             .catch((error) => {
                 console.error("Error:", error);

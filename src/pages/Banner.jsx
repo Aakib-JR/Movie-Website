@@ -5,6 +5,7 @@ import MovieDate from "../components/MovieDate";
 import PlayBtn from "../components/PlayBtn";
 import MovieSwiper from "../components/MovieSwiper";
 import Loading from "./Loading";
+import { MOVIE_DATA_URL } from "../data/api";
 
 function Banner() {
 
@@ -12,7 +13,7 @@ function Banner() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/movieData")
+    fetch(MOVIE_DATA_URL)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
@@ -20,7 +21,7 @@ function Banner() {
         return response.json();
       })
       .then((data) => {
-        setMovie(data);
+        setMovie(data.movieData);
         setLoading(false);
       })
       .catch((error) => {

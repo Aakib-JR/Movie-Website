@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import './blog.css';
 import BlogCard from '../components/BlogCard';
+import { BLOG_DATA_URL } from '../data/api';
 
 
 function Blog(){
@@ -8,33 +9,29 @@ function Blog(){
     const [blogs,setBlogs] = useState([]);
 
 
-    const fetchData = async()=>{
+    useEffect(() => {
+        let isCurrent = true;
 
-        try{
+        fetch(BLOG_DATA_URL)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch blog data: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                if (isCurrent) {
+                    setBlogs(data.blogs);
+                }
+            })
+            .catch((error) => {
+                console.error('Blog data request failed:', error);
+            });
 
-            const res = await fetch(
-                "http://localhost:5000/blogs"
-            );
-
-            const data = await res.json();
-
-            setBlogs(data);
-
-        }
-        catch(error){
-
-            console.log(error.message);
-
-        }
-
-    };
-
-
-    useEffect(()=>{
-
-        fetchData();
-
-    },[]);
+        return () => {
+            isCurrent = false;
+        };
+    }, []);
 
 
 
